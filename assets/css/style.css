@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* container */
+
+.container {
+    margin: 64px 140px;
+}
+
+
+/* header */
+
+.header {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+}
+
+.header-bg {
+    background-color: #ffffff;
+    height: 100%;
+    opacity: .5;
+}
+
+.header-inner {
+    padding: 0 140px;
+}
+
+.header-text {
+    font-family: serif;
+    margin-left: 8px;
+    font-size: 32px;
+    position: absolute;
+    top: 20%;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Bellota', cursive;
+}
+
+
+/* nav */
+
+.nav {
+    position: absolute;
+    right: 8px;
+    padding: 0 140px;
+    top: 35%;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.title-btn {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-btn {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 16px;
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav-btn::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    font: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+
+.nav-btn:hover::after {
+    opacity: 1;
+}
+
+
+/* intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 920px;
+    background: #007523b2 url(../images/intro/bg.jpg) top no-repeat;
+}
+
+.down {
+    background-color: #ffffff;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 72px;
+    margin: 0 auto;
+    border-radius: 50%;
+    opacity: .8;
+}
+
+.arrow {
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4px;
+    margin: 0 auto;
+    transform: rotate(45deg);
+}
+
+
+/* eco */
+
+.eco {
+    margin: 0 8px;
+}
+
+.eco-container {
+    display: flex;
+}
+
+.eco-title {
+    margin: 64px 140px 24px 0;
+    font-size: 64px;
+}
+
+.eco-title:after {
+    content: "";
+    display: block;
+    width: 316px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+}
+
+.eco-def {
+    width: 655px;
+    font-size: 42px;
+    height: 100%;
+}
+
+.eco-pic {
+    background: url(../images/eco/img.jpg) center no-repeat;
+    width: 530px;
+    height: 709px;
+    margin-left: 427px;
+}
+
+
+/* situation */
+
+.sit {
+    background: url(../images/sit/bg.jpg) center no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    height: 950px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.sit-content {
+    background-color: #ffffffbe;
+    width: 100%;
+    height: 800px;
+    font-size: 45px;
+}
+
+.sit-title {
+    font-size: 100px;
+    margin: 0;
+}
+
+.sit-title:after {
+    content: "";
+    display: block;
+    width: 610px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    left: 675px;
+}
+
+.sit-container {
+    display: flex;
+    font-size: 48px;
+    margin: 37px 8px;
+    text-align: justify;
+}
+
+.sit-def1 {
+    width: 788px;
+    height: 100%;
+    margin: 0 32px auto 8px;
+}
+
+.sit-def2 {
+    width: 788px;
+    height: 100%;
+    margin: 32px 8px auto 32px;
+}
+
+
+/* problems */
+
+.pro {
+    margin: 0 8px;
+}
+
+.pro-container {
+    display: flex;
+}
+
+.pro-title {
+    margin: 64px 0 24px 0;
+    font-size: 64px;
+    text-align: right;
+}
+
+.pro-title:after {
+    content: "";
+    display: block;
+    width: 685px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    right: 152px;
+}
+
+.pro-def {
+    width: 655px;
+    height: 709px;
+    font-size: 50px;
+    margin-left: 410px;
+}
+
+.pro-pic {
+    background: url(../images/pro/pic.jpg) center no-repeat;
+    width: 530px;
+    height: 709px;
+}
+
+
+/* solution */
+
+.sol {
+    background: url(../images/sol/bg.jpg) center no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    height: 950px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.sol-content {
+    background-color: #ffffffbe;
+    width: 100%;
+    height: 800px;
+    font-size: 45px;
+}
+
+.sol-title {
+    font-size: 100px;
+    margin: 0 300px;
+}
+
+.sol-title:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    font-size: 0;
+    z-index: 1;
+}
+
+.sol-def {
+    margin: 16px 32px auto 8px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #ffffff;
+    padding: 8px;
+}
+
+.footer-content {
+    text-align: center;
+    margin: 4px auto;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* screen adaptation */
+
+@media screen and (max-width: 800px) {
+    .nav {
+        display: none;
+    }
+}
