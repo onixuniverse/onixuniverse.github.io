@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -18,6 +19,8 @@ body {
     align-items: center;
     width: 100%;
     height: 72px;
+    position: fixed;
+    top: 0;
 }
 
 .header-bg {
@@ -39,12 +42,11 @@ body {
     font-weight: 700;
     color: #000000;
     text-decoration: none;
-    font-family: 'Bellota', cursive;
+    font-family: 'Bellota';
 }
 
 
 /* nav */
-
 .nav {
     position: absolute;
     right: 8px;
@@ -99,42 +101,13 @@ body {
     justify-content: center;
     width: 100%;
     height: 920px;
-    background: #007523b2 url(../images/intro/bg.jpg) top no-repeat;
+    background: #99BEF2 url(../images/intro/bg.jpg) top no-repeat;
 }
-
-.down {
-    background-color: #ffffff;
-    width: 56px;
-    height: 56px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 72px;
-    margin: 0 auto;
-    border-radius: 50%;
-    opacity: .8;
-}
-
-.arrow {
-    border: solid #000000;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 4px;
-    margin: 0 auto;
-    transform: rotate(45deg);
-}
-
 
 /* eco */
 
-.eco {
-    margin: 0 8px;
+#eco {
+    margin: 64px 140px;
 }
 
 .eco-container {
@@ -159,74 +132,50 @@ body {
     width: 655px;
     font-size: 42px;
     height: 100%;
+    margin-right: 471px;
 }
 
 .eco-pic {
     background: url(../images/eco/img.jpg) center no-repeat;
     width: 530px;
     height: 709px;
-    margin-left: 427px;
 }
 
 
 /* situation */
 
-.sit {
+#sit {
     background: url(../images/sit/bg.jpg) center no-repeat;
-    margin: 0 auto;
-    width: 100%;
-    height: 950px;
-    display: flex;
     align-items: center;
+    display: flex;
+}
+
+.sit__container {
+    background-color: #ffffffbe;
+    margin: 64px 140px;
     text-align: center;
 }
 
-.sit-content {
-    background-color: #ffffffbe;
-    width: 100%;
-    height: 800px;
-    font-size: 45px;
+.sit__title {
+    font-size: 64px;
+    margin: 32px 0 48px 0;
 }
 
-.sit-title {
-    font-size: 100px;
-    margin: 0;
-}
-
-.sit-title:after {
-    content: "";
-    display: block;
-    width: 610px;
-    height: 2px;
-    background-color: #000000;
-    position: absolute;
-    left: 675px;
-}
-
-.sit-container {
+.sit__content {
     display: flex;
-    font-size: 48px;
-    margin: 37px 8px;
+}
+
+.sit__text {
+    font-size: 45px;
+    margin: 16px;
     text-align: justify;
-}
-
-.sit-def1 {
-    width: 788px;
-    height: 100%;
-    margin: 0 32px auto 8px;
-}
-
-.sit-def2 {
-    width: 788px;
-    height: 100%;
-    margin: 32px 8px auto 32px;
 }
 
 
 /* problems */
 
-.pro {
-    margin: 0 8px;
+#pro {
+    margin: 64px 140px;
 }
 
 .pro-container {
@@ -251,7 +200,7 @@ body {
 
 .pro-def {
     width: 655px;
-    height: 709px;
+    height: 100%;
     font-size: 50px;
     margin-left: 410px;
 }
@@ -265,29 +214,28 @@ body {
 
 /* solution */
 
-.sol {
+#sol {
     background: url(../images/sol/bg.jpg) center no-repeat;
     margin: 0 auto;
     width: 100%;
-    height: 950px;
     display: flex;
     align-items: center;
     text-align: center;
 }
 
-.sol-content {
+.sol__content {
     background-color: #ffffffbe;
     width: 100%;
-    height: 800px;
+    margin: 64px 140px;
     font-size: 45px;
 }
 
-.sol-title {
+.sol__title {
     font-size: 100px;
     margin: 0 300px;
 }
 
-.sol-title:after {
+.sol__title:after {
     content: "";
     display: block;
     width: 100%;
@@ -297,8 +245,13 @@ body {
     z-index: 1;
 }
 
-.sol-def {
-    margin: 16px 32px auto 8px;
+.sol__text {
+    margin: 32px 16px;
+    text-align: justify;
+}
+
+.sol__text ol {
+    margin-left: 32px;
 }
 
 
@@ -314,13 +267,4 @@ footer {
     margin: 4px auto;
     color: #000000;
     text-decoration: none;
-}
-
-
-/* screen adaptation */
-
-@media screen and (max-width: 800px) {
-    .nav {
-        display: none;
-    }
 }
