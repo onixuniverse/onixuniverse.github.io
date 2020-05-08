@@ -5,28 +5,18 @@ body {
 }
 
 
-/* container */
-
 .container {
     margin: 64px 140px;
 }
 
 
 /* header */
-
 .header {
-    position: absolute;
-    align-items: center;
     width: 100%;
     height: 72px;
     position: fixed;
+    background-color: #ffffff80;
     top: 0;
-}
-
-.header-bg {
-    background-color: #ffffff;
-    height: 100%;
-    opacity: .5;
 }
 
 .header-inner {
@@ -46,7 +36,6 @@ body {
 }
 
 
-/* nav */
 .nav {
     position: absolute;
     right: 8px;
@@ -94,19 +83,18 @@ body {
 
 
 /* intro */
-
 .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     height: 920px;
-    background: #99BEF2 url(../images/intro/bg.jpg) top no-repeat;
+    background: #99BEF2 url(../images/backgrounds/intro.jpg) top no-repeat;
 }
 
 /* eco */
 
-#eco {
+.eco {
     margin: 64px 140px;
 }
 
@@ -136,7 +124,7 @@ body {
 }
 
 .eco-pic {
-    background: url(../images/eco/img.jpg) center no-repeat;
+    background: url(../images/backgrounds/eco.jpg) center no-repeat;
     width: 530px;
     height: 709px;
 }
@@ -144,8 +132,8 @@ body {
 
 /* situation */
 
-#sit {
-    background: url(../images/sit/bg.jpg) center no-repeat;
+.sit {
+    background: url(../images/backgrounds/sit.jpg) center no-repeat;
     align-items: center;
     display: flex;
 }
@@ -157,12 +145,24 @@ body {
 }
 
 .sit__title {
-    font-size: 64px;
-    margin: 32px 0 48px 0;
+    font-size: 100px;
+    margin: 0;
+}
+
+.sit__title:after {
+    content: "";
+    display: block;
+    width: 615px;
+    height: 2px;
+    background-color: #000000;
+    font-size: 0;
+    position: absolute;
+    left: 650px;
 }
 
 .sit__content {
     display: flex;
+    margin: 32px 16px;
 }
 
 .sit__text {
@@ -174,7 +174,7 @@ body {
 
 /* problems */
 
-#pro {
+.pro {
     margin: 64px 140px;
 }
 
@@ -191,11 +191,11 @@ body {
 .pro-title:after {
     content: "";
     display: block;
-    width: 685px;
+    width: 680px;
     height: 2px;
     background-color: #000000;
     position: absolute;
-    right: 152px;
+    right: 144px;
 }
 
 .pro-def {
@@ -206,7 +206,7 @@ body {
 }
 
 .pro-pic {
-    background: url(../images/pro/pic.jpg) center no-repeat;
+    background: url(../images/backgrounds/pro.jpg) center no-repeat;
     width: 530px;
     height: 709px;
 }
@@ -214,8 +214,8 @@ body {
 
 /* solution */
 
-#sol {
-    background: url(../images/sol/bg.jpg) center no-repeat;
+.sol {
+    background: url(../images/backgrounds/sol.jpg) center no-repeat;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -232,17 +232,18 @@ body {
 
 .sol__title {
     font-size: 100px;
-    margin: 0 300px;
+    margin: 0;
 }
 
 .sol__title:after {
     content: "";
     display: block;
-    width: 100%;
+    width: 965px;
     height: 2px;
     background-color: #000000;
     font-size: 0;
-    z-index: 1;
+    position: absolute;
+    left: 480px;
 }
 
 .sol__text {
