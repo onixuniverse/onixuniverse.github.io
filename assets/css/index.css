@@ -8,6 +8,9 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 40px;
     min-height: 100vh;
+
+    background: url(../images/background.webp) center no-repeat, linear-gradient(to right top, #454545, #212121);
+    background-size: cover;
 }
 
 .container {
@@ -16,9 +19,6 @@ body {
 
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-
-    background: url(../images/background.webp) center no-repeat gray;
-    background-size: cover;
 
     overflow:hidden;
 }
