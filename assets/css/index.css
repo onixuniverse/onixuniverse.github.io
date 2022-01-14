@@ -8,7 +8,6 @@
 }
 
 body {
-    font-size: 40px;
     min-height: 100vh;
 
     background: url(../images/backgroun.webp) center no-repeat, linear-gradient(to right top, #454545, #212121);
@@ -28,6 +27,7 @@ body {
 [class^="box-"] {
     cursor: pointer;
 
+    font-size: 40px;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
@@ -67,5 +67,9 @@ body {
     .container {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    [class^="box-"] {
+        font-size: 25px;
     }
 }

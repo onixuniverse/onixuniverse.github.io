@@ -13,12 +13,12 @@
 
 @media screen and (max-device-width: 950px) {
     .logo {
-        font-size: 80px;
+        font-size: 60px;
     }
 }
 
 @media screen and (max-device-width: 720px) {
     .logo {
-        font-size: 60px;
+        font-size: 40px;
     }
 }
