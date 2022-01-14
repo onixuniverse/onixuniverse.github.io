@@ -27,7 +27,6 @@ body {
 [class^="box-"] {
     cursor: pointer;
 
-    font-size: 40px;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
@@ -36,10 +35,14 @@ body {
     place-items: center;
 }
 
-[class^="box-"]:hover,
 .text-box {
+    font-size: 40px;
+}
+
+[class^="box-"]:hover,
+.text-box:hover {
     transform: scale(1.05);
-    font-size: 50px;
+    font-size: 45px;
     transition: 1s;
 }
 
@@ -61,15 +64,4 @@ body {
 .box-about:hover {
     background: url(../images/about.jpg) center no-repeat;
     background-size: cover;
-}
-
-@media screen and (max-device-width: 950px) {
-    .container {
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    [class^="box-"] {
-        font-size: 25px;
-    }
 }

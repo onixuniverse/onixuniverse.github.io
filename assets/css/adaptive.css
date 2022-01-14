@@ -1,0 +1,80 @@
+/* @media screen and (max-device-width: 950px) {
+    .container {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    [class^="box-"] {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-device-width: 950px) {
+    .logo {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-device-width: 720px) {
+    .logo {
+        font-size: 40px;
+    }
+} */
+
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    .text-box {
+        font-size: 50px;
+    }
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .text-box {
+        font-size: 35px;
+    }
+
+    .text-box:hover {
+        font-size: 40px;
+    }
+
+    .logo {
+        font-size: 80px;
+    }
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .container {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text-box {
+        font-size: 40px;
+    }
+
+    .text-box:hover {
+        font-size: 45px;
+    }
+
+    .logo {
+        font-size: 50px;
+    }
+  }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 480px) {
+    .text-box {
+        font-size: 30px;
+    }
+
+    .text-box:hover {
+        font-size: 35px;
+    }
+    
+    .logo {
+        font-size: 40px;
+    }
+  }

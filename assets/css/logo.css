@@ -11,14 +11,3 @@
     font-size: 100px;
 }
 
-@media screen and (max-device-width: 950px) {
-    .logo {
-        font-size: 60px;
-    }
-}
-
-@media screen and (max-device-width: 720px) {
-    .logo {
-        font-size: 40px;
-    }
-}
