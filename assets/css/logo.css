@@ -1,0 +1,24 @@
+.logo {
+    user-select: none;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+    font-weight: 200;
+    color: white;
+    font-size: 100px;
+}
+
+@media screen and (max-device-width: 950px) {
+    .logo {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-device-width: 720px) {
+    .logo {
+        font-size: 60px;
+    }
+}
