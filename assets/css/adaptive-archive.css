@@ -1,0 +1,30 @@
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    .text-box {
+        font-size: 32px;
+    }
+  }
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .text-box {
+        font-size: 26px;
+    }
+  }
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .container {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text-box {
+        font-size: 24px;
+    }
+  }
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 480px) {
+    .text-box {
+        font-size: 20px;
+    }
+  }

@@ -1,0 +1,11 @@
+/*==========  Desktop First  ========== */
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 480px) {
+    .social-ico {
+        width: 38px;
+    }
+  }
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 320px) {
+    /* */
+  }
