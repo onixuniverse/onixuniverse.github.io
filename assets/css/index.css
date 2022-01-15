@@ -10,7 +10,7 @@
 body {
     min-height: 100vh;
 
-    background: url(../images/backgroun.webp) center no-repeat, linear-gradient(to right top, #454545, #212121);
+    background: linear-gradient(to right top, #454545, #212121);
     background-size: cover;
 }
 
@@ -47,21 +47,21 @@ body {
 }
 
 .box-info:hover {
-    background: url(../images/information.jpg) center no-repeat;
+    background: url(../images/information.webp) center no-repeat;
     background-size: cover;
 }
 
 .box-projects:hover {
-    background: url(../images/projects.jpg) center no-repeat;
+    background: url(../images/projects.webp) center no-repeat;
     background-size: cover;
 }
 
 .box-archive:hover {
-    background: url(../images/archive.jpg) center no-repeat;
+    background: url(../images/archive.webp) center no-repeat;
     background-size: cover;
 }
 
-.box-about:hover {
-    background: url(../images/about.jpg) center no-repeat;
+.box-connection:hover {
+    background: url(../images/connection.webp) center no-repeat;
     background-size: cover;
 }
