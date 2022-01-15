@@ -12,10 +12,6 @@
         font-size: 35px;
     }
 
-    .text-box:hover {
-        font-size: 40px;
-    }
-
     .logo {
         font-size: 80px;
     }
@@ -32,10 +28,6 @@
         font-size: 40px;
     }
 
-    .text-box:hover {
-        font-size: 45px;
-    }
-
     .logo {
         font-size: 50px;
     }
@@ -45,10 +37,6 @@
   @media only screen and (max-width: 480px) {
     .text-box {
         font-size: 30px;
-    }
-
-    .text-box:hover {
-        font-size: 35px;
     }
     
     .logo {
